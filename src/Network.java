@@ -70,7 +70,6 @@ public class Network {
     /**
      * delete() function used to remove data from the API using the DELETE verb
      * @param path
-     * @param params
      * @return String Network.request()
      * @throws Exception 
      */

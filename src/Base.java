@@ -72,8 +72,7 @@ public class Base {
      * delete() calls Network.delete() and returns a JSONObject based on the
      * return. If is not a valid JSONObject, throws an Exception
      * @param path
-     * @param params
-     * @return
+     * @return JSONObject json
      * @throws Exception 
      */
     public JSONObject delete(String path) throws Exception{
