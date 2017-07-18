@@ -11,12 +11,25 @@ Library version: `1.0.0`
 
 ## Installation
 
-Install **java .jar file** inside your libraries
+Install **java .jar file** inside your libraries and then import the package with `import com.quiubas.api.*;`. Remember you can replace the `*` with any of the available Classes in case you require only a specific class for a specific endpoint.
+
+Available classes:
+- Quiubas
+- Sms
+- Balance
+- Base
+- Network
+- Callback
+- Keywords
+- Mnp
 
 ## Quickstart
 
 ```java
 //Imports
+//The library package import
+import com.quiubas.api.*;
+//Others imports
 import java.util.Map;
 import java.util.HashMap;
 

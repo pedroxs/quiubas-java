@@ -1,3 +1,5 @@
+package com.quiubas.api;
+
 /**
  * Quiubass library
  * For full documentation go here: 
