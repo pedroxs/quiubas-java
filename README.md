@@ -52,7 +52,7 @@ public class MyApp {
         try{
             //If we don't have errors, we get a response as a JSONObject, so
             //we can get, for example, the sms_id and print it
-            System.out.println(Sms.send(data).getString("sms_id");
+            System.out.println(Sms.send(data).getString("sms_id"));
         }catch(Exception e){
             //If we have errors, we show the error message
             System.out.println(e.getMessage());

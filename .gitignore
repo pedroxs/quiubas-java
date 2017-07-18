@@ -2,4 +2,5 @@ build
 test/
 nbproject/
 build/
+dist/javadoc/
 build.xml
