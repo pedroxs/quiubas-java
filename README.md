@@ -2,7 +2,7 @@
 
 Library version: `1.0.0`
 
-[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)]() [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)]() [![Quiubas](https://img.shields.io/badge/version-1.0-brightgreen.svg)]() 
+[![Build Status](https://travis-ci.org/quiubas/quiubas-java.svg?branch=master)](https://travis-ci.org/quiubas/quiubas-java) [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)]() [![Quiubas](https://img.shields.io/badge/version-1.0-brightgreen.svg)]() 
 
 ## Requirements
 - JDK 1.8+
