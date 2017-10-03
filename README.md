@@ -1,8 +1,8 @@
 # Quiubas Java Library
 
-Library version: `1.0.0`
+Library version: `1.2.0`
 
-[![Build Status](https://travis-ci.org/quiubas/quiubas-java.svg?branch=master)](https://travis-ci.org/quiubas/quiubas-java) [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)]() [![Quiubas](https://img.shields.io/badge/version-1.0-brightgreen.svg)]() 
+[![Build Status](https://travis-ci.org/quiubas/quiubas-java.svg?branch=master)](https://travis-ci.org/quiubas/quiubas-java) [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)]() [![Quiubas](https://img.shields.io/badge/version-1.2-brightgreen.svg)]() 
 
 ## Requirements
 - JDK 1.8+
@@ -19,7 +19,6 @@ Available classes:
 - Balance
 - Base
 - Network
-- Callback
 - Keywords
 - Mnp
 
@@ -47,7 +46,7 @@ public class MyApp {
         Map<String, String> data = new HashMap<>();
         //Required parameters are "to_number" and "message"
         data.put("to_number", "+524435051725");
-        data.put("message", "Hola mundo");
+        data.put("message", "Hello world");
         //Now, lets send it.
         try{
             //If we don't have errors, we get a response as a JSONObject, so

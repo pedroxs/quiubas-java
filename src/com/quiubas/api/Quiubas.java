@@ -5,7 +5,7 @@ package com.quiubas.api;
  * For full documentation go here: 
  * https://github.com/quiubas/quiubas-java
  * 
- * @version 1.0.0
+ * @version 1.2.0
  * @author  Quiubas Team
  */
 import java.util.Map;
@@ -35,18 +35,18 @@ public class Quiubas {
     /**
      * Library Version
      */
-    public static String LIB_VERSION = "0.0.1";
+    public static String LIB_VERSION = "1.2.0";
 
     /**
      * Base URL
      */
-    public static String BASE_URL = "https://rest.quiubas.com";
+    public static String BASE_URL = "https://api.quiubas.com";
     
     /**
      * setAuth() let you set the API_KEY and API_SECRET variables so 
      * the library use it for generate connections
-     * @param key
-     * @param secret 
+     * @param String key
+     * @param String secret 
      */
     public void setAuth(String key, String secret){
         this.API_KEY = key;
@@ -67,7 +67,7 @@ public class Quiubas {
     
     /**
      * setBaseURL() let you change the BASE_URL variable
-     * @param url 
+     * @param String url 
      */
     public void setBaseURL(String url){
         this.BASE_URL = url;
@@ -79,22 +79,6 @@ public class Quiubas {
      */
     public String getBaseURL(){
         return this.BASE_URL;
-    }
-    
-    /**
-     * setVersion() let you change the API_VERSION variable
-     * @param version 
-     */
-    public void setVersion(String version){
-        this.API_VERSION = version;
-    }
-    
-    /**
-     * getVersion() get the API_VERSION variable
-     * @return String API_VERSION
-     */
-    public String getVersion(){
-        return this.API_VERSION;
     }
     
     /**
