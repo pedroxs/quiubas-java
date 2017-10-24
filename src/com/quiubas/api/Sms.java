@@ -5,7 +5,7 @@ package com.quiubas.api;
  * For full documentation go here: 
  * https://github.com/quiubas/quiubas-java
  * 
- * @version 1.0.0
+ * @version 1.2.0
  * @author  Quiubas Team
  */
 
@@ -92,43 +92,6 @@ public class Sms extends Base{
      */
     public JSONObject getById(String id) throws Exception{
         return Base.get(base + "/" + id);
-    }
-    
-    /**
-     * getResponses() gets the recent SMSs sent. Optional parameters are from_id, 
-     * and limit. Check the documentation for more info.
-     * @param id
-     * @param params
-     * @return JSONObject Base.get()
-     * @throws Exception 
-     */
-    public JSONObject getResponses(String id, Map<String, String> params) throws Exception{
-        String url = "";
-        if(params.get("from_id") != null){
-            url += "from_id=" + params.get("from_id") + "&";
-        }
-        if(params.get("limit") != null){
-            url += "limit=" + params.get("limit") + "&";
-        }
-        
-        if(url.trim().length() > 0){
-            url = "?" + url.substring(0, url.length() - 1);
-            base = base + "/" + id + "/responses" + url;
-        }else{
-            base = base + "/" + id + "/responses";
-        }
-        
-        return Base.get(base);
-    }
-    
-    /**
-     * An overload of the get() method so the parameter "params" is optional
-     * @param id
-     * @return JSONObject get()
-     * @throws Exception 
-     */
-    public JSONObject getResponses(String id) throws Exception{
-        return this.getResponses(id, new HashMap<String, String>());
     }
     
 }

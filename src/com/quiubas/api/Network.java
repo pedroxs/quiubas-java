@@ -5,7 +5,7 @@ package com.quiubas.api;
  * For full documentation go here: 
  * https://github.com/quiubas/quiubas-java
  * 
- * @version 1.0.0
+ * @version 1.2.0
  * @author  Quiubas Team
  */
 
@@ -99,7 +99,7 @@ public class Network {
      * @return String
      */
     public String request(String path, Map<String, String> params, String method){
-        String fullUrl = Quiubas.BASE_URL + "/" + Quiubas.API_VERSION + "/" + URLEncoder.encode(path);
+        String fullUrl = Quiubas.BASE_URL + "/" + URLEncoder.encode(path);
         Base64 base64 = new Base64();
         String encoded = base64.encodeAsString((this.API_KEY + ":" + this.API_SECRET).getBytes());
         try{
@@ -119,7 +119,6 @@ public class Network {
                     for(Map.Entry<String, String> entry : params.entrySet()){
                         urlParamsPost += entry.getKey() + "=" + URLEncoder.encode(entry.getValue(), "UTF-8") + "&";
                     }
-                    //Remove last '&'
                     urlParamsPost = urlParamsPost.substring(0, urlParamsPost.length() - 1);
                     writePost.writeBytes(urlParamsPost);
                     writePost.flush();
@@ -137,7 +136,6 @@ public class Network {
                     for(Map.Entry<String, String> entry : params.entrySet()){
                         urlParamsPut += entry.getKey() + "=" + URLEncoder.encode(entry.getValue(), "UTF-8") + "&";
                     }
-                    //Remove last '&'
                     if(urlParamsPut.trim().length() > 0){
                         urlParamsPut = urlParamsPut.substring(0, urlParamsPut.length() - 1);
                         writePut.writeBytes(urlParamsPut);
