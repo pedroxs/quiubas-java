@@ -10,6 +10,7 @@ package com.quiubas.api;
  */
 import java.util.HashMap;
 import org.json.JSONObject;
+import org.json.JSONArray;
 
 /**
  * 
@@ -21,6 +22,11 @@ public class Shortcode {
      * API Endpoint
      */
     public static String base = "shortcode";
+    
+    /**
+     * Secondary API Endpoint
+     */
+    public static String secondaryBase = "shortcodes";
     
     /**
      * Base object
@@ -40,7 +46,7 @@ public class Shortcode {
      * @throws Exception 
      */
     public JSONObject get() throws Exception {
-        return Base.get(base);
+        return Base.get(secondaryBase);
     }
     
     /**
@@ -59,8 +65,8 @@ public class Shortcode {
      * @return
      * @throws Exception 
      */
-    public JSONObject getResponses(String id) throws Exception {
-        return Base.get(base + "/" + id + "/responses");
+    public JSONArray getResponses(String id) throws Exception {
+        return Base.getArray(base + "/" + id + "/responses");
     }
     
     /**

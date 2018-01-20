@@ -10,6 +10,7 @@ package com.quiubas.api;
  */
 
 import org.json.JSONObject;
+import org.json.JSONArray;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -100,8 +101,8 @@ public class Sms extends Base{
      * @return JSONObject Base.get()
      * @throws Exception 
      */
-    public JSONObject getResponses(String id) throws Exception {
-        return Base.get(base + "/" + id + "/responses");
+    public JSONArray getResponses(String id) throws Exception {
+        return Base.getArray(base + "/" + id + "/responses");
     }
     
 }

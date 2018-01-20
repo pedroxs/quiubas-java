@@ -101,7 +101,7 @@ public class Network {
      * @return String
      */
     public String request(String path, Map<String, String> params, String method){
-        String fullUrl = Quiubas.BASE_URL + "/" + URLEncoder.encode(path);
+        String fullUrl = Quiubas.BASE_URL + "/" + URLEncoder.encode(path).replace("%2F", "/");
         Base64 base64 = new Base64();
         String encoded = base64.encodeAsString((this.API_KEY + ":" + this.API_SECRET).getBytes());
         try{
