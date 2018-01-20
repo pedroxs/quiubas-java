@@ -5,11 +5,12 @@ package com.quiubas.api;
  * For full documentation go here: 
  * https://github.com/quiubas/quiubas-java
  * 
- * @version 1.2.0
+ * @version 1.3.0
  * @author  Quiubas Team
  */
 
 import org.json.JSONObject;
+import org.json.JSONArray;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -92,6 +93,16 @@ public class Sms extends Base{
      */
     public JSONObject getById(String id) throws Exception{
         return Base.get(base + "/" + id);
+    }
+    
+    /**
+     * getResponses() gets the response in a SMS using the ID
+     * @param id
+     * @return JSONObject Base.get()
+     * @throws Exception 
+     */
+    public JSONArray getResponses(String id) throws Exception {
+        return Base.getArray(base + "/" + id + "/responses");
     }
     
 }

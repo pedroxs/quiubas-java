@@ -5,7 +5,7 @@ package com.quiubas.api;
  * For full documentation go here: 
  * https://github.com/quiubas/quiubas-java
  * 
- * @version 1.2.0
+ * @version 1.3.0
  * @author  Quiubas Team
  */
 import org.json.JSONObject;
@@ -21,6 +21,11 @@ public class Keywords extends Base{
      * API Endpoint
      */
     private String base = "keywords";
+    
+    /**
+     * Secondary API Endpoint
+     */
+    private String secondaryBase = "keyword";
     
     /**
      * Base object
@@ -51,23 +56,13 @@ public class Keywords extends Base{
     }
     
     /**
-     * get() let you get all the keywords that you stored in your account in a
-     * JSONObject. Check the documentation for more info.
-     * @return JSONObject Base.get()
-     * @throws Exception 
-     */
-    public JSONObject get() throws Exception{
-        return Base.get(base);
-    }
-    
-    /**
      * getById() let you get a single keyword based on the ID
      * @param id
      * @return JSONObject Base.get()
      * @throws Exception 
      */
     public JSONObject getById(String id) throws Exception{
-        return Base.get(base + "/" + id);
+        return Base.get(secondaryBase + "/" + id);
     }
     
     /**
@@ -79,18 +74,8 @@ public class Keywords extends Base{
      * @return JSONObject Base.update()
      * @throws Exception 
      */
-    public JSONObject update(String id, Map<String, String> params) throws Exception{
-        return Base.update(base + "/" + id, params);
+    public JSONObject update(String id) throws Exception{
+        return Base.update(secondaryBase + "/" + id);
     }
-    
-    /**
-     * delete() removes a keyword based on the keyword ID
-     * @param id
-     * @return JSONObject Base.delete()
-     * @throws Exception 
-     */
-    public JSONObject delete(String id) throws Exception{
-        return Base.delete(base + "/" + id);
-   }
     
 }
