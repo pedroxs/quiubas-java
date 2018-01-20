@@ -5,7 +5,7 @@ package com.quiubas.api;
  * For full documentation go here: 
  * https://github.com/quiubas/quiubas-java
  * 
- * @version 1.2.0
+ * @version 1.3.0
  * @author  Quiubas Team
  */
 import java.util.Map;

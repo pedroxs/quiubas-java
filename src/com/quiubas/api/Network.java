@@ -5,7 +5,7 @@ package com.quiubas.api;
  * For full documentation go here: 
  * https://github.com/quiubas/quiubas-java
  * 
- * @version 1.2.0
+ * @version 1.3.0
  * @author  Quiubas Team
  */
 
@@ -28,7 +28,7 @@ public class Network {
     /**
      * Emulates Mozilla User Agent
      */
-    private static final String USER_AGENT = "Mozilla/5.0";
+    private String USER_AGENT = "Quiubas-Java";
     /**
      * To store original API_KEY
      */
@@ -41,11 +41,13 @@ public class Network {
     /**
      * Network constructor.
      * Sets the API_KEY and API_SECRET from the Qiubas class
-     * which is used to set the authentification for the API server.
+     * which is used to set the authentification for the API server. Also
+     * sets the USER_AGENT 
      */
     public Network(){
         this.API_KEY = Quiubas.API_KEY;
         this.API_SECRET = Quiubas.API_SECRET;
+        this.USER_AGENT = this.USER_AGENT + "/" + Quiubas.API_VERSION;
     }
     
     /**
@@ -106,7 +108,7 @@ public class Network {
             URL url = new URL(fullUrl);
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             
-            con.setRequestProperty("User-Agent", Network.USER_AGENT);
+            con.setRequestProperty("User-Agent", this.USER_AGENT);
             con.setDoOutput(true);
             con.setRequestProperty("Authorization", "Basic " + encoded);
             

@@ -5,7 +5,7 @@ package com.quiubas.api;
  * For full documentation go here: 
  * https://github.com/quiubas/quiubas-java
  * 
- * @version 1.2.5
+ * @version 1.3.0
  * @author  Quiubas Team
  */
 import org.json.JSONObject;
@@ -28,7 +28,7 @@ public class TwoFactor {
     private final Base Base;
 
     /**
-     * Base constructor
+     * TwoFactor constructor
      */
     public TwoFactor(){
         Base = new Base();
