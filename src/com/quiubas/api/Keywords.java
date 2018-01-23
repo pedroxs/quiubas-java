@@ -5,7 +5,7 @@ package com.quiubas.api;
  * For full documentation go here: 
  * https://github.com/quiubas/quiubas-java
  * 
- * @version 1.3.0
+ * @version 1.3.1
  * @author  Quiubas Team
  */
 import org.json.JSONObject;
@@ -72,8 +72,12 @@ public class Keywords extends Base{
      * @return JSONObject Base.update()
      * @throws Exception 
      */
-    public JSONObject update(String id) throws Exception{
-        return Base.update(secondaryBase + "/" + id);
+    public JSONObject update(String id, Map<String, String>params) throws Exception{
+        if(params.get("callback") != null) {
+            return Base.update(secondaryBase + "/" + id, params);
+        }else{
+            throw new Exception("Error, 'callback' parameter is required");
+        }
     }
     
 }
