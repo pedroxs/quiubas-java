@@ -1,8 +1,8 @@
 # Quiubas Java Library
 
-Library version: `1.3.0`
+Library version: `1.3.1`
 
-[![Build Status](https://travis-ci.org/quiubas/quiubas-java.svg?branch=master)](https://travis-ci.org/quiubas/quiubas-java) [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)]() [![Quiubas](https://img.shields.io/badge/version-1.3-brightgreen.svg)]() 
+[![Build Status](https://travis-ci.org/quiubas/quiubas-java.svg?branch=master)](https://travis-ci.org/quiubas/quiubas-java) [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)]() [![Quiubas](https://img.shields.io/badge/version-1.3.1-brightgreen.svg)]() 
 
 ## Requirements
 - JDK 1.8+
