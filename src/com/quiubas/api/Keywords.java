@@ -66,11 +66,9 @@ public class Keywords extends Base{
     }
     
     /**
-     * update() let you update the keyword based on the keyword ID.
-     * The parameters are optional but if you're going to update a keyword
-     * you should send at least 1 parameter. Check the documentation for more info.
+     * update() let you update the keyword callback based on the
+	 * keyword ID.
      * @param id
-     * @param params
      * @return JSONObject Base.update()
      * @throws Exception 
      */

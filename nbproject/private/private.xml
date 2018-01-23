@@ -3,14 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Asfo/Documents/NetBeansProjects/Quiubas-API/src/com/quiubas/api/Quiubas.java</file>
-            <file>file:/C:/Users/Asfo/Documents/NetBeansProjects/Quiubas-API/src/com/quiubas/api/Base.java</file>
-            <file>file:/C:/Users/Asfo/Documents/NetBeansProjects/Quiubas-API/src/com/quiubas/api/Mnp.java</file>
-            <file>file:/C:/Users/Asfo/Documents/NetBeansProjects/Quiubas-API/src/com/quiubas/api/Keywords.java</file>
-            <file>file:/C:/Users/Asfo/Documents/NetBeansProjects/Quiubas-API/src/com/quiubas/api/Sms.java</file>
-            <file>file:/C:/Users/Asfo/Documents/NetBeansProjects/Quiubas-API/src/com/quiubas/api/Callback.java</file>
-            <file>file:/C:/Users/Asfo/Documents/NetBeansProjects/Quiubas-API/src/com/quiubas/api/Balance.java</file>
-            <file>file:/C:/Users/Asfo/Documents/NetBeansProjects/Quiubas-API/src/com/quiubas/api/Network.java</file>
+            <file>file:/C:/Users/theas/Documents/Quiubas/quiubas-java/src/com/quiubas/api/Base.java</file>
+            <file>file:/C:/Users/theas/Documents/Quiubas/quiubas-java/src/com/quiubas/api/Network.java</file>
+            <file>file:/C:/Users/theas/Documents/Quiubas/quiubas-java/src/com/quiubas/api/Sms.java</file>
         </group>
     </open-files>
 </project-private>
