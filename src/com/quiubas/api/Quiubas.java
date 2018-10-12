@@ -35,7 +35,7 @@ public class Quiubas {
     /**
      * Library Version
      */
-    public static String LIB_VERSION = "1.2.0";
+    public static String LIB_VERSION = "1.4.0";
 
     /**
      * Base URL
