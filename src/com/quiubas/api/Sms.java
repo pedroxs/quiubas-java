@@ -5,7 +5,7 @@ package com.quiubas.api;
  * For full documentation go here: 
  * https://github.com/quiubas/quiubas-java
  * 
- * @version 1.3.1
+ * @version 1.4.0
  * @author  Quiubas Team
  */
 
