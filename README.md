@@ -1,6 +1,6 @@
 # Quiubas Java Library
 
-Library version: `1.4.0`
+Library version: `1.4.1`
 
 [![Build Status](https://travis-ci.org/quiubas/quiubas-java.svg?branch=master)](https://travis-ci.org/quiubas/quiubas-java) [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)]() [![Quiubas](https://img.shields.io/badge/version-1.3.1-brightgreen.svg)]() 
 
@@ -20,8 +20,6 @@ Available classes:
 - Balance
 - Base
 - Network
-- Keywords
-- Shortcode
 - TwoFactor
 - Mnp
 

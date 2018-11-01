@@ -5,7 +5,7 @@ package com.quiubas.api;
  * For full documentation go here: 
  * https://github.com/quiubas/quiubas-java
  * 
- * @version 1.4.0
+ * @version 1.4.1
  * @author  Quiubas Team
  */
 import java.util.Map;
@@ -35,7 +35,7 @@ public class Quiubas {
     /**
      * Library Version
      */
-    public static String LIB_VERSION = "1.4.0";
+    public static String LIB_VERSION = "1.4.1";
 
     /**
      * Base URL
