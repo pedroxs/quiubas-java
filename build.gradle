@@ -1,0 +1,71 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+plugins {
+    id 'maven-publish'
+}
+
+apply plugin: 'idea'
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group 'com.quiubas'
+version '1.4.1'
+description = 'Quiubas Java Library for REST API'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+task testReport(type: TestReport) {
+    destinationDir = file("$buildDir/reports/tests")
+    reportOn test
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+configurations {
+    published
+}
+
+dependencies {
+    compile group: 'commons-codec', name: 'commons-codec', version: "${commons_codec_version}"
+    compile group: 'org.json', name: 'json', version: "${json_version}"
+
+    testCompile("junit:junit:${junit_version}")
+    testCompile("ch.qos.logback:logback-classic:${logback_classic_version}")
+}
+
+task sourceJar(type: Jar) {
+    from sourceSets.main.allSource
+    classifier = 'sources'
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    from javadoc.destinationDir
+    classifier = 'javadoc'
+}
+
+artifacts {
+    published sourceJar
+    published javadocJar
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            artifact (sourceJar)
+            artifact (javadocJar)
+        }
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.8'
+}
